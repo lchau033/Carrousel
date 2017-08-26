@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aquablue"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar">
+        </include>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Remplissez ce que vous rechercher dans un gardien"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/langues_parl_es"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/eggplant"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Français"
+        android:id="@+id/french"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/english"
+        android:checked="false"
+        android:layout_below="@+id/french"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Anglais" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Espagnol"
+        android:id="@+id/spanish"
+        android:checked="false"
+        android:layout_below="@+id/english"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/capacit_s_acad_miques1"
+        android:id="@+id/textView8"
+        android:buttonTint="@color/colorAccent"
+        android:textColor="@color/eggplant"
+        android:layout_above="@+id/french"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathématiques"
+        android:id="@+id/math"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Langues"
+        android:id="@+id/langue"
+        android:checked="false"
+        android:layout_below="@+id/math"
+        android:layout_alignLeft="@+id/math"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignStart="@+id/math" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sciences"
+        android:id="@+id/science"
+        android:checked="false"
+        android:layout_below="@+id/langue"
+        android:layout_alignLeft="@+id/langue"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignStart="@+id/langue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/sexe1"
+        android:id="@+id/textView9"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spanish"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/eggplant"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroupSexe">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme"
+            android:id="@+id/homme"
+            android:layout_below="@+id/textView9"
+            android:buttonTint="@color/colorAccent"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme"
+            android:id="@+id/femme"
+            android:layout_below="@+id/homme"
+            android:layout_alignParentLeft="true"
+            android:buttonTint="@color/colorAccent"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ge_minimum"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/science"
+        android:layout_alignLeft="@+id/science"
+        android:layout_alignStart="@+id/science"
+        android:textColor="@color/eggplant"
+        android:layout_marginTop="10dp"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:solidColor="@color/colorAccent"
+        android:layout_above="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/qualit_s"
+        android:textColor="@color/eggplant"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/radioGroupSexe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-fumeur"
+        android:id="@+id/non_smocker"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peut cuisiner"
+        android:id="@+id/can_cook"
+        android:layout_below="@+id/non_smocker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/disponibilit"
+        android:textColor="@color/eggplant"
+        android:id="@+id/textView12"
+        android:layout_above="@+id/monday"
+        android:layout_alignLeft="@+id/monday"
+        android:layout_alignStart="@+id/monday"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lundi"
+        android:id="@+id/monday"
+        android:checked="false"
+        android:layout_above="@+id/non_smocker"
+        android:buttonTint="@color/colorAccent"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mardi"
+        android:id="@+id/tuesday"
+        android:checked="false"
+        android:layout_above="@+id/wednesday"
+        android:layout_toRightOf="@+id/sunday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_toEndOf="@+id/sunday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mercredi"
+        android:id="@+id/wednesday"
+        android:checked="false"
+        android:layout_below="@+id/monday"
+        android:layout_alignLeft="@+id/monday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignStart="@+id/monday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jeudi"
+        android:id="@+id/thursday"
+        android:checked="false"
+        android:layout_below="@+id/tuesday"
+        android:layout_alignRight="@+id/tuesday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignEnd="@+id/tuesday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vendredi"
+        android:id="@+id/friday"
+        android:checked="false"
+        android:layout_alignTop="@+id/can_cook"
+        android:layout_alignRight="@+id/wednesday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignEnd="@+id/wednesday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samedi"
+        android:id="@+id/saturday"
+        android:checked="false"
+        android:layout_above="@+id/sunday"
+        android:layout_alignLeft="@+id/thursday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignStart="@+id/thursday" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dimanche"
+        android:id="@+id/sunday"
+        android:checked="false"
+        android:layout_below="@+id/friday"
+        android:layout_alignLeft="@+id/friday"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignStart="@+id/friday" />
+
+    <LinearLayout
+        style="@style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/prev_button"
+            style="@style/ButtonBarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/eggplant"
+            android:text="@string/rechercher"
+            android:onClick="rechercher"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/sand"/>
+    </LinearLayout>
+</RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        android:background="@color/grape"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>
+

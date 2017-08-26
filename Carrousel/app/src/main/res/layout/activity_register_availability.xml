@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lia.carrousel.Activities.Register.RegisterAvailabilityActivity"
+    android:background="@color/grape">
+
+    <LinearLayout
+        style="@style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/prev_button"
+            style="@style/ButtonBarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/eggplant"
+            android:text="@string/pr_c_dente"
+            android:onClick="previous"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/sand"/>
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/ButtonBarButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/eggplant"
+            android:text="@string/suivant"
+            android:onClick="suivant"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/sand"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cochez tous les jours que vous pouvez travailler"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lundi"
+        android:id="@+id/lundi"
+        android:textColor="@color/white"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mardi"
+        android:id="@+id/mardi"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/lundi"
+        android:layout_alignLeft="@+id/lundi"
+        android:layout_alignStart="@+id/lundi" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mercredi"
+        android:id="@+id/mercredi"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/mardi"
+        android:layout_alignLeft="@+id/mardi"
+        android:layout_alignStart="@+id/mardi" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jeudi"
+        android:id="@+id/jeudi"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/mercredi"
+        android:layout_alignLeft="@+id/mercredi"
+        android:layout_alignStart="@+id/mercredi" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vendredi"
+        android:id="@+id/vendredi"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/jeudi"
+        android:layout_alignLeft="@+id/jeudi"
+        android:layout_alignStart="@+id/jeudi" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Samedi"
+        android:id="@+id/samedi"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/vendredi"
+        android:layout_alignLeft="@+id/vendredi"
+        android:layout_alignStart="@+id/vendredi" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dimanche"
+        android:id="@+id/dimanche"
+        android:textColor="@color/white"
+        android:buttonTint="@color/colorAccent"
+        android:checked="false"
+        android:layout_below="@+id/samedi"
+        android:layout_alignLeft="@+id/samedi"
+        android:layout_alignStart="@+id/samedi" />
+</RelativeLayout>

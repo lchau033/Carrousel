@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lia.carrousel">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/carousel"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Carousel">
+        </activity>
+        <activity
+            android:name=".Activities.Register.RegisterActivity"
+            android:label="Type d&apos;utilisateur" />
+        <activity
+            android:name=".Activities.Register.RegisterNamesActivity"
+            android:label="Informations Personnelles" />
+        <activity
+            android:name=".Activities.Register.RegisterPasswordActivity"
+            android:label="Mot de passe" />
+        <activity
+            android:name=".Activities.Register.RegisterAddressActivity"
+            android:label="Adresse" />
+        <activity
+            android:name=".Activities.Register.RegisterDescriptionActivity"
+            android:label="Carousel" />
+        <activity
+            android:name=".Activities.Register.RegisterDescriptionGardienActivity"
+            android:label="Carousel" />
+        <activity
+            android:name=".Activities.Register.RegisterLanguageActivity"
+            android:label="Langues parlées" />
+        <activity
+            android:name=".Activities.Register.RegisterClassesActivity"
+            android:label="Capacités académiques" />
+        <activity
+            android:name=".Activities.Register.RegisterQualitiesActivity"
+            android:label="Qualités" />
+        <activity
+            android:name=".Activities.Register.RegisterAvailabilityActivity"
+            android:label="Disponibilité" />
+        <activity
+            android:name=".Activities.MainPageActivity"
+            android:label="Carousel"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.RechercheAvanceeActivity"
+            android:label="Recherche avancée"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.VoirDemandesActivity"
+            android:label="Voir demandes"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.ChangerProfilActivity"
+            android:label="Profil"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.HelpActivity"
+            android:label="Aide"
+            android:theme="@style/MyTheme"  />
+        <activity
+            android:name=".Activities.DemandeActivity"
+            android:label="Demande"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.DemandesConfirmeesActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.DemandeGardienActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.SeeDemandActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.SeeDemandGardienActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.ProfilActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.ProfilGardienActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.ResearchResultsActivity"
+            android:label="Résultats"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Activities.SentDemandsActivity"
+            android:label="Demandes effectuées"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".Activities.SplashScreenActivity"
+            android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.ModifyNamesActivity"
+            android:label="Modifier Noms"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyAddressActivity"
+            android:label="Modifier Adresse"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyDescriptionGardienActivity"
+            android:label="Modifier Description"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyDescriptionActivity"
+            android:label="Modifier Description"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyLaguageActivity"
+            android:label="Modifier les langues"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyAvailabilityActivity"
+            android:label="Modifier la disponibilité"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyQualitiesActivity"
+            android:label="Modifier les qualités"
+            android:theme="@style/MyTheme"/>
+        <activity
+            android:name=".Activities.ModifyClassesActivity"
+            android:label="Modifier les capacités académiques"
+            android:theme="@style/MyTheme"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f70025</color>
+    <color name="colorPrimaryDark">#f70025</color>
+    <color name="colorAccent">#b8d20b</color>
+    <color name="sand">#ffffff</color>
+    <color name="grape">#f7efe2</color>
+    <color name="white">#000000</color>
+    <color name="eggplant">#f25c00</color>
+    <color name="granite">#b7b8b6</color>
+    <color name="orangeJuice">#f7882f</color>
+    <color name="cinnamon">#faaf08</color>
+    <color name="aquablue">#f7efe2</color>
+</resources>

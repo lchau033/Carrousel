@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_home_page"
+        android:title="Page principale"/>
+    <item
+        android:id="@+id/menu_search"
+        android:title="Voir demandes"/>
+    <item
+        android:id="@+id/menu_voir_demandes"
+        android:title="Voir demandes confirmées"/>
+    <item
+        android:id="@+id/menu_changer_profil"
+        android:title="Changer profil"/>
+    <item
+        android:id="@+id/menu_help"
+        android:title="Aide"/>
+    <item
+        android:id="@+id/menu_Logout"
+        android:title="Logout"/>
+
+
+</menu>

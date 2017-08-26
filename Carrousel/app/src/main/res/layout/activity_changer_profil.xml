@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/aquablue"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar">
+        </include>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:layout_marginBottom="@dimen/feed_item_margin"
+            android:background="@color/aquablue"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+            android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="420dp"
+                android:orientation="vertical"
+                android:background="@color/aquablue"
+                android:layout_margin="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Choisissez une option du profil que vous vous voulez modifier"
+                    android:textStyle="bold"
+                    android:id="@+id/textView6"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroupModify">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informations personelles"
+                        android:id="@+id/radioButton1"
+                        android:buttonTint="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:checked="false"
+                        android:layout_below="@+id/textView6"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adresse"
+                        android:id="@+id/radioButton3"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="false"
+                        android:layout_below="@+id/radioButton1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:id="@+id/radioButton5"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="false"
+                        android:layout_below="@+id/radioButton3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Langues parlées"
+                        android:id="@+id/radioButton6"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="false"
+                        android:layout_alignTop="@+id/radioButton5"
+                        android:layout_alignLeft="@+id/radioButton4"
+                        android:layout_alignStart="@+id/radioButton4" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capacité académique"
+                        android:id="@+id/radioButton7"
+                        android:checked="false"
+                        android:buttonTint="@color/colorAccent"
+                        android:layout_below="@+id/radioButton5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qualités"
+                        android:id="@+id/radioButton8"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="false"
+                        android:layout_alignTop="@+id/radioButton7"
+                        android:layout_alignLeft="@+id/radioButton6"
+                        android:layout_alignStart="@+id/radioButton6" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disponibilité"
+                        android:id="@+id/radioButton9"
+                        android:checked="false"
+                        android:buttonTint="@color/colorAccent"
+                        android:layout_below="@+id/radioButton7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    style="@style/ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:id="@+id/prev_button"
+                        style="@style/ButtonBarButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/eggplant"
+                        android:text="Changer l'information"
+                        android:onClick="changerInfo"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@color/sand"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        android:background="@color/grape"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>
